@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&family=Noto+Sans+Old+Sogdian&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Noto Sans Old Sogdian", sans-serif;
+}
+
+:root {
+    --background-color: black;
+    --text-color: #fff;
+    --blue-color: #3896cc;
+    --blue-hover-color: #3896cc97;
+}
+
+.part1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.part1 i{
+    font-size: 250px;
+}
+
+.part2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.part2 .titre{
+    font-size: 40px;
+    margin: 20px;
+}
+
+.part2 .incription{
+    margin-top: 20px;
+    margin: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.part2 .incription h2{
+    font-size: 40px;
+}
+
+.part2 .incription form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.part2 .incription form input{
+    margin: 15px 0px;
+    padding: 15px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    font-size: 20px;
+}
+
+.part2 .incription form button{
+    margin: 20px 0px;
+    padding: 15px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--blue-color);
+    color: var(--text-color);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.part2 .incription form button:hover{
+    background-color: var(--blue-hover-color);
+}

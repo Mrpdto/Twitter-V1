@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&family=Noto+Sans+Old+Sogdian&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html,body{
+    height: 100%;
+    min-width: 100%;
+    display: flex;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Noto Sans Old Sogdian", sans-serif;
+}
+
+:root {
+    --background-color: black;
+    --text-color: #fff;
+    --border-color: #7777776a;
+    --link-hover-color: #77777744;
+    --blue-color: #3896cc;
+    --blue-hover-color: #3896cc97;
+    --profile-color: gray;
+    --cross-color: #c8c8c86a;
+    --cross-hover-color: #c8c8c8;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    border-right: var(--border-color) solid 0.3px;
+    align-items: flex-end;
+}
+
+.menuBlock{
+    margin: 30px 0px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+.titre{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.titre i{
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+.menu .menuLiens{
+    display: flex;
+    flex-direction: column;  
+}
+
+.menuLiens a{
+    font-size: 20px;
+    margin: 10px;
+    padding: 15px;	
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+}
+
+.menuLiens a.position{
+    font-weight: bold;
+}
+
+.menuLiens a:hover{
+    background-color: var(--link-hover-color);
+    border-radius: 30px;
+}
+
+.menuLiens a i{
+    margin-right: 15px;
+}
+
+.postButton{
+    font-size: 20px;
+    width: 70%;
+    margin: 10px;
+    padding: 15px;
+    background-color: var(--blue-color);
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.postButton:hover{
+    background-color: var(--blue-hover-color);
+}
+
+.accueil{
+    position: relative;
+    display: flex;
+    width: 75%;
+    overflow-y: auto;
+}
+
+.accueil .filActu{
+    width: 60%;
+}
+
+.filActu .filOptions{
+    height: 60px;
+    border-right: var(--border-color) solid 0.3px;
+    border-bottom: var(--border-color) solid 0.3px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-end;
+}
+
+.filActu .filOptions.recherche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filActu .filOptions form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filActu .filOptions form label{
+    color: gray;
+    font-size: 20px;
+    margin: 0px 10px;
+}
+
+.filActu .filOptions form input{
+    margin: 0px 10px;
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+    border: none;
+    outline: 0;
+    border-radius: 30px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+.filActu .profile{
+    position: relative;
+    height: 50%;
+    border-right: var(--border-color) solid 0.3px;
+}
+
+.profile .iconProfile{
+    position: absolute;
+    font-size: 70px;
+    top: 35%;
+    left: 10%;
+    background-color: var(--background-color);
+    padding: 30px;
+    border-radius: 50%;
+}
+
+.profile .part1{
+    width: 100%;
+    height: 50%;
+    background-color: var(--profile-color);
+}
+
+.profile .part2{
+    width: 100%;
+    height: 50%;
+}
+
+.part2 .deconexion{
+    text-align: end;
+    margin: 20px 30px;
+}
+
+.part2 .deconexion button{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: none;
+    border: var(--border-color) solid 0.3px;
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 7px 12px;
+    cursor: pointer;
+}
+
+.part2 .deconexion button:hover{
+    background-color: var(--border-color);
+}
+
+.part2 .nomProfil{
+    margin: 20px 30px;
+
+}
+
+.filOptionsBoite{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filActu .filOptions p{
+    font-weight: bold;
+}
+
+.filActu .filOptions .traitBleu{
+    width: 60px;
+    height: 4px;
+    background-color: var(--blue-color);
+    border-radius: 30px;
+}
+
+.filActu .post{
+    height: 180px;
+    border-right: var(--border-color) solid 0.3px;
+    border-bottom: var(--border-color) solid 0.3px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.filActu .post i{
+    font-size: 30px;
+    margin: 30px;
+}
+
+.filActu .post button{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    background-color: var(--blue-color);
+    color: var(--text-color);
+    border: none;
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.filActu .post button:hover{
+    background-color: var(--blue-hover-color);
+}
+
+.postInput{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    outline: 0;
+    border: none;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 20px;
+
+}
+
+.filActu .tweets{
+    min-height: 100%;
+    border-right: var(--border-color) solid 0.3px;
+}
+
+.tweets .tweet{
+    padding: 10px;
+    border-bottom: var(--border-color) solid 0.3px;
+    overflow-x: hidden;
+    display: flex;
+    align-items: flex-start;
+}
+
+.tweetPdp{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+    margin: 5px 20px;
+
+}
+
+.tweetPdp i{
+    font-size: 30px;
+}
+
+.tweetPdp .croix{
+    color: var(--cross-color);
+    font-size: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.tweetPdp .croix:hover{
+    color: var(--cross-hover-color);
+}
+
+.tweetContenu .tweetUser{
+    font-weight: bold;
+}
+
+.accueil .autre{
+    width: 40%;
+}
